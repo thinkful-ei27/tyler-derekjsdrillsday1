@@ -1,8 +1,11 @@
-// eslint-disable-next-line strict
-function createGreeting() {
-  return 'Hi, my name is Tyler and I\'m 27 years old';
+'use strict';
+
+function createGreeting(name, age) {
+  const yearOfBirth = 2018 - age;
+  return `Hi, my name is ${name} and I'm ${age} years old. I was borin in ${yearOfBirth}.`;
 }
+
 let greeting = createGreeting();
+
+// eslint-disable-next-line no-console
 console.log(greeting);
-
-
